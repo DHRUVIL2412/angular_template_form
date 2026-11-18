@@ -1,0 +1,23 @@
+<form #vehicalRegistation = "ngForm" (ngSubmit)="onSubmit(vehicalRegistation)">
+    <div class="inputWithOutput">
+        <label for="vehicaltitle">vehical title</label>
+        <input type="text" name="vehicaltitle" id="vehicaltitle" ngModel required/>
+        <!-- @if(vehicaltitle) -->
+        <label for="vinnumber"> vinnumber</label>
+        <input type="number" name="vinnumber" id="vinnumber" ngModel required/>
+        <label for="price">price</label>
+        <input type="number" name="price" id="price" ngModel required/>
+    </div>
+    <select id="same" name="same" ngModel required><p>select model</p>
+        <option value="Petrol">Petrol</option>
+        <option  value="Electric">Electric</option>
+        <option  value="Diesal">Diesal</option>
+        <option value="Hybrid">Hybird</option>
+    </select>
+    <label name="isNegotiable" for="isNegotiable" >isNegotiable</label>
+    <input type="checkbox" name="isNegotiable" id="isNegotiable" required ngModel>
+
+    <button name="buttonClick" type="submit" [disabled]="vehicalRegistation.invalid">Submit</button>
+
+    <!-- {{}} -->
+</form>

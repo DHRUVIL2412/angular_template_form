@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { AssignmentOne } from './components/assignment-one/assignment-one';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, AssignmentOne],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
