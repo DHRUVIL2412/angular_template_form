@@ -1,0 +1,14 @@
+<div>
+    <p>here is the item inside your cart</p>
+</div>
+<div class="displaySection">
+    <ul>
+        @for(ProductList of ProductLists ; track $index){
+        <div class="productList">
+            <span>{{ProductList.productName}}</span>
+            <span>{{ProductList.productPrice}}</span>
+            <span> <button (click)="removeItem($index)">Remove</button></span>
+        </div>
+        }
+    </ul>
+</div>

@@ -16,28 +16,31 @@ export interface FormModel {
   templateUrl: './assignment-one.html',
 })
 export class AssignmentOne {
-  @ViewChild('vehicalRegistation') vehicalForm!: NgForm;
+  // @ViewChild('vehicalRegistation') vehicalForm!: NgForm;
 
-  formmodel: FormModel = {
-    isNegotiable : false,
-    same:'Diesal',
-    vehicaltitle: '',
-    vinnumber: 0,
-    price:0
-  }
-  myButton:Boolean=true;
+  // formmodel: FormModel = {
+  //   isNegotiable : false,
+  //   same:'Diesal',
+  //   vehicaltitle: '',
+  //   vinnumber: 0,
+  //   price:0
+  // }
+  // myButton:Boolean=true;
 
-  isFildIsValid(par:String):boolean{
-  const cvarianl = this.vehicalForm?.control?.[par];
-  return ( cvarianl && cvarianl.invalid && (cvarianl.dirty || cvarianl.touched ))
-  }
-  
+  // isFildIsValid(par:String):boolean{
+  // const cvarianl = this.vehicalForm?.control?.[par];
+  // return ( cvarianl && cvarianl.invalid && (cvarianl.dirty || cvarianl.touched ))
+  // }
+
   onSubmit(vehicalregi: NgForm) {
   
-    if(this.vehicalForm.invalid){
-      console.log(this.vehicalForm);
-      this.vehicalForm.control.markAllAsTouched();
+    // if(this.vehicalForm.invalid){
+    //   console.log(this.vehicalForm);
+    //   this.vehicalForm.control.markAllAsTouched();
 
-    }
+    // }
+
+    console.log(vehicalregi.form.get('last_name'));
   }
+  
 }

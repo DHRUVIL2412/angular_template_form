@@ -1,0 +1,33 @@
+<div class="mainDiv">
+    <div class="body_section">
+        <app-product-header [ourList]="myCount"> </app-product-header>
+    </div>
+<div >
+    <div class="displaySection">
+        <div>
+    <p>List of the avaible item</p>
+</div>
+        <ul>
+            @for(prods of dataFiels ; track $index)
+            {
+                <div class="productList">
+                    <span>{{prods.productName}}</span>
+                    <span>{{prods.productPrice}}</span>
+                    <span> <button (click)="addProducts(prods.productName,prods.productPrice)">Add</button></span>
+                </div>
+            }
+        </ul>
+    
+    <!-- <div class="displaySection"> -->
+        <!-- {{myList.productList}} -->
+        
+        <app-product-cart [ProductLists]="myList" (prodRemode)="removeProds($event)"></app-product-cart>
+    <!-- </div> -->
+</div>
+</div>
+
+<div>
+    here is the total {{addtions}}
+</div> 
+
+</div>

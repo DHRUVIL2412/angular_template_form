@@ -1,0 +1,6 @@
+.headSection{
+    background-color: rgb(184, 158, 235);
+    display: flex;
+    align-content: space-between;
+    align-items:normal;
+}

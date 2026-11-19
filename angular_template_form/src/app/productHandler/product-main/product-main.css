@@ -1,0 +1,26 @@
+.mainDiv{
+    background-color: bisque;
+    padding: 10px;
+margin: 20px;
+}
+.displaySection{
+background-color: rgb(128, 13, 237);
+padding: 10px;
+margin: 20px 0;
+}
+.productList{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+background-color: rgb(208, 168, 245);
+    width: 50%;
+    width: 50%;
+    padding: 10px 100px;
+    margin: 10px;
+    border-radius: 10px;
+    color: green;
+}
+li{
+    background-color: brown;
+    
+}
